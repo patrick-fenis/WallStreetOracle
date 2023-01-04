@@ -1,0 +1,13 @@
+html {
+    background-color: darkolivegreen;
+}
+h1 {
+    text-align: center;
+    color: black;
+}
+
+.background {
+    max-width: 100%;
+    max-height: auto;
+    border: 10px, solid, black;
+}
