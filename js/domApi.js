@@ -1,1 +1,1 @@
-console.log('Hello world!')
+fetch ('https://api.stockdata.org/v1/data/quote?symbols=LMT&api_token=E8gohHXE0bQzggOAYqRNwzZigNrJVbQxUlS4soLq')

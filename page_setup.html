@@ -10,11 +10,18 @@
 <h1>Wall Street Oracle</h1>
 <h2>Predict The Future of the Market</h2>
 <body>
-    <div id="presentation">
+    <div id="input-section">
     <p id="intro">Pick a stock and enter its ticker symbol in the search bar. We'll take a look at the data and let you know whether you should buy or sell.</p>
     <p id="warning">Take this advice with a grain of salt. The market is a wild and unpredictable place.</p>
+    <form>
     <input type="text" placeholder="Ticker Symbol">
     <button id="calculate">Calculate</button>
+    </form>
+</div>
+<div id="result-section">
+    <h2 id="symbol">Symbol</h2>
+    <h3 id="company-name">Company Name</h3>
+    <h3 id="verdict">Verdict</h3>
 </div>
 </body>
 <script src="js/domApi.js"></script>

@@ -2,6 +2,7 @@ html {
     background-color: darkolivegreen;
 }
 h1 {
+    margin-top: -2%;
     text-align: center;
     color: darkgoldenrod;
 }
@@ -24,16 +25,16 @@ body {
 
 #intro {
     color: darkgoldenrod;
-    margin-left: 25%;
-    margin-right: 55%;
+    margin-left: 10%;
+    margin-right: 60%;
     margin-top: 5%;
 }
 
 #warning {
     color: darkgoldenrod;
-    margin-left: 55%;
-    margin-right: 25%;
-    margin-top: -5%;
+    margin-left: 60%;
+    margin-right: 10%;
+    margin-top: -6.5%;
 }
 
 #calculate {
@@ -43,12 +44,20 @@ body {
     height: 50px;
 }
 
-#presentation {
+#input-section {
     border:10px solid darkgoldenrod;
+    margin-left: 12%;
+    margin-right: 12%;
 }
 
 input {
     height: 45px;
     width: 200px;
     text-align: center;
+}
+
+#result-section {
+    border: 10px solid darkgoldenrod;
+    margin-left: 12%;
+    margin-right: 12%;
 }
