@@ -24,22 +24,23 @@ body {
 #intro {
     color: darkgoldenrod;
     margin-left: 10%;
-    margin-right: 60%;
+    margin-right: 10%;
     margin-top: 5%;
+    font-size: 20px;
 }
 
 #warning {
     color: darkgoldenrod;
-    margin-left: 60%;
+    margin-left: 10%;
     margin-right: 10%;
-    margin-top: -65px;
-    margin-bottom: 3%;
+    font-size: 20px;
 }
 
 #input-section {
     border:10px solid darkgoldenrod;
     margin-left: 12%;
     margin-right: 12%;
+    background-image: url(https://i.imgur.com/6ndv51e.png)
 }
 
 input {
@@ -58,6 +59,7 @@ input {
     margin-right: 12%;
     color: darkgoldenrod;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(https://i.imgur.com/6ndv51e.png)
 }
 
 #symbol {
