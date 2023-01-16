@@ -29,8 +29,21 @@ document.querySelector('form').addEventListener('submit', (e) => {
 })
 } 
 
-document.querySelector('#learn-more').addEventListener('click', (v) => {
-    document.querySelector('#learn-more').innerText = stockData
+const modal = document.querySelector('#modal')
+const modalContent = document.querySelector('#stock-data') 
+
+document.querySelector('#learn-more').addEventListener('click', () => {
+    modalContent.innerText = stockData
+    console.log()
+    modal.style.display = "block"
 })
+
+document.querySelector('#close').addEventListener('click', () => {
+    modal.style.display = "none";
+})
+
+
+
+
 
 

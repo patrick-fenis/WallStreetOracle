@@ -78,3 +78,26 @@ input {
     padding-top: 10px;
 }
 
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    top: 33%;
+    left: 12.5%;
+    width: 75%;
+    height: 100%;
+    overflow: auto;
+}
+
+#modal-content {
+    background-color: bisque;
+    margin: 10% auto;
+    padding: 15px;
+    border: 2px groove blanchedalmond;
+}
+
+#close {
+    color: red;
+    float: right;
+    font-size: 18px;
+}
