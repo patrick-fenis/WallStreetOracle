@@ -37,7 +37,9 @@ document.querySelector('#learn-more').addEventListener('click', () => {
     document.querySelector('#price').innerText = `$${stockData.price}`
     document.querySelector('#day-change').innerText = stockData.day_change
     document.querySelector('#day-open').innerText = `$${stockData.day_open}`
+    document.querySelector('#previous_close_price').innerText = `$${stockData.previous_close_price}`
     document.querySelector('#volume').innerText = stockData.volume
+    document.querySelector('#market-cap').innerText = `$${stockData.market_cap}`
     modal.style.display = "block"
 })
 
