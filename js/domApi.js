@@ -34,7 +34,6 @@ const modalContent = document.querySelector('#stock-data')
 
 document.querySelector('#learn-more').addEventListener('click', () => {
     modalContent.innerText = stockData
-    console.log()
     modal.style.display = "block"
 })
 
