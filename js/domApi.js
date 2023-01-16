@@ -1,3 +1,4 @@
+let stockData = {}
 window.onload = (event) => {
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault()
@@ -17,6 +18,8 @@ document.querySelector('form').addEventListener('submit', (e) => {
         document.querySelector('#symbol').innerText = json.data[0].ticker
         document.querySelector('#company-name').innerText = json.data[0].name
         document.querySelector('#verdict').innerText = verdict
+        stockData = json.data[0]
+        console.log(stockData)
     },
     (err) => {
         console.log(err)
@@ -25,3 +28,9 @@ document.querySelector('form').addEventListener('submit', (e) => {
 })
 })
 } 
+
+document.querySelector('#learn-more').addEventListener('click', (v) => {
+    document.querySelector('#learn-more').innerText = stockData
+})
+
+
