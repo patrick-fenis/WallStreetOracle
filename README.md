@@ -1,4 +1,7 @@
 # WallStreetOracle
+
+Link to live site: https://statuesque-wisp-f9cebc.netlify.app/
+
 This is an app that allows anyone to search for a stock ticker symbol and have the website return a "Buy" or "Sell" recommendation
 based on an algorithm that annalyses the stock data to return this result. The webiste uses html and css code to set up the page layout and 
 design. 

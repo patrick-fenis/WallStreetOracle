@@ -7,9 +7,16 @@ document.querySelector('form').addEventListener('submit', (e) => {
     return response.json()
     }).then((json) => {
         console.log(json)
+        let verdict = ''
+        let output = json.data[0].day_change
+            if(output > 0){
+                verdict = 'SELL'
+            } else {
+                verdict = 'BUY'
+            }
         document.querySelector('#symbol').innerText = json.data[0].ticker
         document.querySelector('#company-name').innerText = json.data[0].name
-        document.querySelector('#verdict').innerText = "BUY"
+        document.querySelector('#verdict').innerText = verdict
     },
     (err) => {
         console.log(err)
