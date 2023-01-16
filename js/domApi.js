@@ -9,6 +9,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
         console.log(json)
         document.querySelector('#symbol').innerText = json.data[0].ticker
         document.querySelector('#company-name').innerText = json.data[0].name
+        document.querySelector('#verdict').innerText = "BUY"
     },
     (err) => {
         console.log(err)
