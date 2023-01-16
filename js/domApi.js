@@ -3,7 +3,7 @@ window.onload = (event) => {
 document.querySelector('form').addEventListener('submit', (e) => {
     e.preventDefault()
     const search = document.querySelector('input[type="text"]').value
-    fetch (`https://api.stockdata.org/v1/data/quote?symbols=${search}&api_token=E8gohHXE0bQzggOAYqRNwzZigNrJVbQxUlS4soLq`).then
+    fetch (`https://api.stockdata.org/v1/data/quote?symbols=${search}&api_token=4eACabta8CtXVIVKsOd9lInaIFCHnuBkWgZYIEbJ`).then
     ((response) => {
     return response.json()
     }).then((json) => {
@@ -33,7 +33,11 @@ const modal = document.querySelector('#modal')
 const modalContent = document.querySelector('#stock-data') 
 
 document.querySelector('#learn-more').addEventListener('click', () => {
-    modalContent.innerText = stockData
+    document.querySelector('#exchange').innerText = `${stockData.exchange_long}(${stockData.exchange_short})`
+    document.querySelector('#price').innerText = `$${stockData.price}`
+    document.querySelector('#day-change').innerText = stockData.day_change
+    document.querySelector('#day-open').innerText = `$${stockData.day_open}`
+    document.querySelector('#volume').innerText = stockData.volume
     modal.style.display = "block"
 })
 
